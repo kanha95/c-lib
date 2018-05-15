@@ -18,7 +18,18 @@ cin>>s;
 long pr;
 cin>>pr;
 
-hm[pr].push(s);
+hm[pr].push(s); 
+  /* or java style code
+if(hm.find(pr)==hm.end()){    
+priority_queue <string, vector<string>, greater<string> > pq;
+pq.push(s);
+hm.insert(pair <long long, priority_queue <string, vector<string>, greater<string> > > (pr,pq));
+}
+    else{
+       hm.at(pr).push(s);                 
+    }
+    
+*/    
 
 
 }
